@@ -78,6 +78,10 @@ public class CoachMarksController {
 
     // MARK: - Lifecycle
     public init() { }
+    
+    public func instructionsRootViewInteraction(enabled: Bool) {
+        coachMarksViewController.instructionsRootView.isUserInteractionEnabled = enabled
+    }
 }
 
 // MARK: - Forwarded Properties
