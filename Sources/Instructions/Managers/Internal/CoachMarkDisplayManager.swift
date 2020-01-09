@@ -93,6 +93,7 @@ class CoachMarkDisplayManager {
 
         let transitionManager = CoachMarkTransitionManager(coachMark: coachMark)
 
+        transitionManager.parameters.duration = coachMark.animationDuration
         animationDelegate?.fetchDisappearanceTransition(OfCoachMark: coachMarkView, at: index,
                                                         using: transitionManager)
 
@@ -165,6 +166,7 @@ class CoachMarkDisplayManager {
 
         let transitionManager = CoachMarkTransitionManager(coachMark: coachMark)
 
+        transitionManager.parameters.duration = coachMark.animationDuration
         animationDelegate?.fetchAppearanceTransition(OfCoachMark: coachMarkView, at: index,
                                                      using: transitionManager)
 
